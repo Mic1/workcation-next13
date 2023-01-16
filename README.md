@@ -1,27 +1,24 @@
-# Next.js + Tailwind CSS Example
+<img width="1126" alt="workcation" src="https://user-images.githubusercontent.com/1424640/211996581-f3fd3cee-5192-486a-85c7-57b30b1c0371.png">
+# DEMO AT https://vibrant-stonebraker-0f221c.netlify.app/
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.2)](https://tailwindcss.com/blog/tailwindcss-v3-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
 
-## Deploy your own
+* NOTE: Latest versions of Firefox might not show UnSplash images by default. This can be fixed by typing "about:config" in browser URL bar, scrolling down to parameter "image.avif.enabled" and toggling it to "disabled"
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+## Next 13 is a full stack framework,
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+### that coupled with React 18 allows us to implement an efficient and elegant architecture for both DX and UX by interleaving server and client components. Full stack ### because it gives the full power of React when needed to  client components, and keeps the static part of the app rendering on the server with server components to ### fetch data and stream it in as ready. No more Next 12  hydration on the client.
 
-## How to use
+### The new Layout architecture of Next 13, components never renders unnecessarily as it only rerenders areas where data is added in.
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+### This necessitates a change of mind set to server-based thinking, where all components are server-based and client components are only used when they are needed.
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-```
+### A side effect of this might be a reusable set of client components, as the use of Layouts and nested layouts with page subsections focused on client interaction clearly delegates a narrow band of behaviour for us to code into those client components.
 
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+The plan is to take an existing project ( Workcation - one of the original Tailwind demos ported from Vue to React), and update to Next 13 and React 18 with efficient code and elegant architecture.
 
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
+Then we will attempt to duplicate this code and architecture again using React 18 on the front end, but this time without Next 13. We want to see whether React 18 together with tools like react-router etc. can give us the streamlined dichotomy of server and client components, with its component promises and streaming data and its nested layouts with client components to minimize rerenders in both area and frequency .... quite simply "Can we do Next 13 without Next 13?
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+A side project will write a Sveltekit/Svelte comparison to see how it architects this forward way of thinking about server - client code.
+
+
+### This repo contains the Next 13 WorkCation app.
